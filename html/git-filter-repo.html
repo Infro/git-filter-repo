@@ -761,14 +761,13 @@ git-filter-repo(1) Manual Page
 <div class="sect1">
 <h2 id="_description">DESCRIPTION</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Rapidly rewrite entire repository history using user-specified filters.
-This is a destructive operation which should not be used lightly; it
-writes new commits, trees, tags, and blobs corresponding to (but
-filtered from) the original objects in the repository, then deletes the
-original history and leaves only the new.  See <a href="#DISCUSSION">[DISCUSSION]</a> for more
-details on the ramifications of using this tool.  Several different
-types of history rewrites are possible; examples include (but are not
-limited to):</p></div>
+<div class="paragraph"><p>
+Scripted editing a git repository (commits, trees, tags, blobs) and workspace.
+By default it replaces the history and workspace.
+This is a destructive operation which should not be used lightly and it is recommended to --analyze.
+See <a href="#DISCUSSION">[DISCUSSION]</a> for more details on the ramifications of using this tool.
+Several different types of history rewrites are possible; examples include (but
+are not limited to):</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
